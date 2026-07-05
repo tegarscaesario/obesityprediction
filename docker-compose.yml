@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # Layanan Streamlit (Dashboard & Prediktor Utama)
+  streamlit:
+    build: .
+    container_name: obesity_streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    command: streamlit run app_streamlit.py --server.address=0.0.0.0 --server.port=8501
+    restart: always
+
+  # Layanan FastAPI (REST API Backend)
+  fastapi:
+    build: .
+    container_name: obesity_fastapi
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: uvicorn api_fastapi:app --host 0.0.0.0 --port 8000
+    restart: always

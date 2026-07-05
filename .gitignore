@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+
+# Jupyter / notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Data: keep only the original dataset and markdown docs
+Data/*
+!Data/original_train.csv
+!Data/original_test.csv
+!Data/data_dictionary.md
+!Data/source_dataset.md
+
+# Reports: keep only the key report files
+Reports/*
+!Reports/all_experiment_results.csv
+!Reports/classification_reports.json
+!Reports/audit_dataset.json

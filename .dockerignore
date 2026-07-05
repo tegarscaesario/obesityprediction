@@ -1,0 +1,14 @@
+.venv
+.venv-1
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.git
+.gitignore
+.DS_Store
+.ipynb_checkpoints
+.gemini
+.agents
+*.docx
+*.pdf
