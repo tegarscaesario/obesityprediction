@@ -19,10 +19,9 @@ env/
 # Logs
 *.log
 
-# Data: keep only the original dataset and markdown docs
+# Data: keep the raw dataset and markdown docs only
 Data/*
-!Data/original_train.csv
-!Data/original_test.csv
+!Data/ObesityDataSet_raw_and_data_sinthetic.csv
 !Data/data_dictionary.md
 !Data/source_dataset.md
 
@@ -31,3 +30,6 @@ Reports/*
 !Reports/all_experiment_results.csv
 !Reports/classification_reports.json
 !Reports/audit_dataset.json
+
+# Local/non-project files
+Lembar_Jawab_UAS_15547_fixed.docx
